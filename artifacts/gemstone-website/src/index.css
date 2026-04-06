@@ -58,50 +58,50 @@
   --elevate-2: rgba(255,255,255, .09);
 
   /* Dark mode by default */
-  --background: 270 15% 8%;
+  --background: 215 30% 7%;
   --foreground: 0 0% 98%;
 
-  --border: 270 15% 20%;
+  --border: 210 25% 18%;
 
-  --card: 270 20% 12%;
+  --card: 215 30% 10%;
   --card-foreground: 0 0% 98%;
-  --card-border: 270 15% 20%;
+  --card-border: 210 25% 18%;
 
-  --popover: 270 20% 12%;
+  --popover: 215 30% 10%;
   --popover-foreground: 0 0% 98%;
-  --popover-border: 270 15% 20%;
+  --popover-border: 210 25% 18%;
 
-  --primary: 270 80% 60%;
+  --primary: 197 90% 48%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 270 15% 20%;
+  --secondary: 210 25% 18%;
   --secondary-foreground: 0 0% 98%;
 
-  --muted: 270 15% 15%;
-  --muted-foreground: 270 10% 65%;
+  --muted: 215 25% 13%;
+  --muted-foreground: 210 15% 62%;
 
-  --accent: 270 80% 60%;
+  --accent: 197 90% 48%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --input: 270 15% 20%;
-  --ring: 270 80% 60%;
+  --input: 210 25% 18%;
+  --ring: 197 90% 48%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0.75rem;
 
-  --shadow-2xs: 0px 2px 0px 0px hsl(270 80% 60% / 0.1);
-  --shadow-xs: 0px 2px 0px 0px hsl(270 80% 60% / 0.1);
-  --shadow-sm: 0px 2px 0px 0px hsl(270 80% 60% / 0.1), 0px 1px 2px -1px hsl(270 80% 60% / 0.1);
-  --shadow: 0px 2px 0px 0px hsl(270 80% 60% / 0.1), 0px 1px 2px -1px hsl(270 80% 60% / 0.1);
-  --shadow-md: 0px 2px 0px 0px hsl(270 80% 60% / 0.1), 0px 2px 4px -1px hsl(270 80% 60% / 0.1);
-  --shadow-lg: 0px 2px 0px 0px hsl(270 80% 60% / 0.1), 0px 4px 6px -1px hsl(270 80% 60% / 0.1);
-  --shadow-xl: 0px 2px 0px 0px hsl(270 80% 60% / 0.1), 0px 8px 10px -1px hsl(270 80% 60% / 0.1);
-  --shadow-2xl: 0px 2px 0px 0px hsl(270 80% 60% / 0.1);
+  --shadow-2xs: 0px 2px 0px 0px hsl(197 90% 48% / 0.1);
+  --shadow-xs: 0px 2px 0px 0px hsl(197 90% 48% / 0.1);
+  --shadow-sm: 0px 2px 0px 0px hsl(197 90% 48% / 0.1), 0px 1px 2px -1px hsl(197 90% 48% / 0.1);
+  --shadow: 0px 2px 0px 0px hsl(197 90% 48% / 0.1), 0px 1px 2px -1px hsl(197 90% 48% / 0.1);
+  --shadow-md: 0px 2px 0px 0px hsl(197 90% 48% / 0.1), 0px 2px 4px -1px hsl(197 90% 48% / 0.1);
+  --shadow-lg: 0px 2px 0px 0px hsl(197 90% 48% / 0.1), 0px 4px 6px -1px hsl(197 90% 48% / 0.1);
+  --shadow-xl: 0px 2px 0px 0px hsl(197 90% 48% / 0.1), 0px 8px 10px -1px hsl(197 90% 48% / 0.1);
+  --shadow-2xl: 0px 2px 0px 0px hsl(197 90% 48% / 0.1);
 
   --primary-border: hsl(from hsl(var(--primary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
   --secondary-border: hsl(from hsl(var(--secondary)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
