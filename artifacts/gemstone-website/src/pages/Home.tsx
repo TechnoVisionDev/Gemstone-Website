@@ -202,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* Coin Listing Section */}
-      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/5">
+      <section id="listings" className="py-24 px-6 bg-white/[0.01] border-y border-white/5">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -218,12 +218,12 @@ export default function Home() {
                   Coin Listings
                 </div>
                 <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
-                  Get your coin listed on Gemstone
+                  Get your coin or token listed on Gemstone
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                   Want your project's coin or token added to Gemstone? List it for just{" "}
                   <span className="text-white font-semibold">$25/month</span>, billed annually.
-                  Give your community instant access to tipping, airdrops, swaps, and more — all inside Discord.
+                  Give your community instant access to tipping, airdrops, swaps, and more, all inside Discord.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   To learn more and get started, join our Support Discord and open a ticket. Our team will walk you through the process.

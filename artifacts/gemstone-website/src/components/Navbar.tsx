@@ -17,6 +17,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Features</a>
           <a href="#commands" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Commands</a>
+          <a href="#listings" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Listings</a>
           <a href="https://discord.com/oauth2/authorize?client_id=1479292006483099838&scope=bot&permissions=534723947584" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-primary/10 text-primary font-medium rounded-full border border-primary/20 hover:bg-primary hover:text-white transition-all shadow-[0_0_20px_rgba(168,85,247,0.2)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)]">
             Add to Discord
           </a>
