@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Gemstone Bot Website"
+version = "1.0.0"
+id = "artifacts/gemstone-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25841
+
+[services.development]
+run = "pnpm --filter @workspace/gemstone-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/gemstone-website", "run", "build" ]
+publicDir = "artifacts/gemstone-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25841"
+BASE_PATH = "/"
