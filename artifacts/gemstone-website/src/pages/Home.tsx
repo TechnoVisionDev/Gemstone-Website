@@ -20,7 +20,13 @@ export default function Home() {
             className="mb-8 relative"
           >
             <div className="absolute inset-0 bg-primary blur-[80px] opacity-30 rounded-full" />
-            <img src={diamondPng} alt="Gemstone Logo" className="w-32 h-32 md:w-40 md:h-40 object-contain relative z-10 drop-shadow-[0_0_30px_rgba(14,165,233,0.8)] animate-[pulse_3s_ease-in-out_infinite]" />
+            <motion.img
+              src={diamondPng}
+              alt="Gemstone Logo"
+              className="w-32 h-32 md:w-40 md:h-40 object-contain relative z-10 drop-shadow-[0_0_30px_rgba(14,165,233,0.8)]"
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
+            />
           </motion.div>
           
           <motion.h1 
