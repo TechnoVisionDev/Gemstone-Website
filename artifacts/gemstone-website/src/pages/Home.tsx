@@ -201,6 +201,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Coin Listing Section */}
+      <section className="py-24 px-6 bg-white/[0.01] border-y border-white/5">
+        <div className="container mx-auto max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative rounded-3xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 via-black/40 to-black/60 p-10 md:p-16"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(168,85,247,0.15),transparent_60%)]" />
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
+              <div className="flex-1 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary text-sm font-semibold mb-6 tracking-wide uppercase">
+                  <Coins className="w-4 h-4" />
+                  Coin Listings
+                </div>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
+                  Get your coin listed on Gemstone
+                </h2>
+                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                  Want your project's coin or token added to Gemstone? List it for just{" "}
+                  <span className="text-white font-semibold">$25/month</span>, billed annually.
+                  Give your community instant access to tipping, airdrops, swaps, and more — all inside Discord.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  To learn more and get started, join our Support Discord and open a ticket. Our team will walk you through the process.
+                </p>
+              </div>
+              <div className="flex-shrink-0 flex flex-col items-center gap-6 text-center">
+                <div className="px-8 py-6 rounded-2xl bg-black/40 border border-white/10 flex flex-col items-center gap-1">
+                  <span className="text-4xl font-extrabold text-white">$25</span>
+                  <span className="text-sm text-muted-foreground font-medium">per month, billed annually</span>
+                </div>
+                <a
+                  href="https://discord.com/invite/hpbMxBTDAb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="link-listing-discord"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.6)]"
+                >
+                  <Zap className="w-4 h-4 fill-current" />
+                  Join Discord &amp; Open a Ticket
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Banner */}
       <section className="py-24 px-6">
         <div className="container mx-auto max-w-4xl relative">
