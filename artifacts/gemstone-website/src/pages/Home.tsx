@@ -268,7 +268,7 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
             <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8 relative z-10">
-              Ready to bring crypto to your server?
+              Ready to bring crypto to your Discord server?
             </h2>
             <a 
               href="https://discord.com/oauth2/authorize?client_id=1479292006483099838&scope=bot&permissions=534723947584" 
