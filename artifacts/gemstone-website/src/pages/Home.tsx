@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import diamondPng from "@assets/diamond_1775513675340.png";
+import diamondPng from "@assets/Gemma_1775515752732.png";
 import { Wallet, Zap, CloudRain, Gamepad2, Repeat, Store, Coins, Activity, Users, Send } from "lucide-react";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6">
-        <div className="absolute inset-0 top-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 top-0 bg-[radial-gradient(ellipse_at_center,rgba(168,99,235,0.15),transparent_50%)]" />
         <div className="container mx-auto relative z-10 flex flex-col items-center text-center">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -23,7 +23,7 @@ export default function Home() {
             <motion.img
               src={diamondPng}
               alt="Gemstone Logo"
-              className="w-32 h-32 md:w-40 md:h-40 object-contain relative z-10 drop-shadow-[0_0_30px_rgba(59,130,246,0.8)]"
+              className="w-32 h-32 md:w-40 md:h-40 object-contain relative z-10 drop-shadow-[0_0_30px_rgba(168,99,235,0.8)]"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
             />
@@ -58,7 +58,7 @@ export default function Home() {
               href="https://discord.com/oauth2/authorize?client_id=1479292006483099838&scope=bot&permissions=534723947584" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:shadow-[0_0_50px_rgba(59,130,246,0.6)] flex items-center justify-center gap-2"
+              className="px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(168,99,235,0.4)] hover:shadow-[0_0_50px_rgba(168,99,235,0.6)] flex items-center justify-center gap-2"
             >
               <Zap className="w-5 h-5 fill-current" />
               Add to Discord
@@ -91,7 +91,7 @@ export default function Home() {
                 key={stat.label} 
                 className="flex items-center gap-4"
               >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 text-primary shadow-[0_0_15px_rgba(59,130,246,0.15)]">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 text-primary shadow-[0_0_15px_rgba(168,99,235,0.15)]">
                   <stat.icon className="w-6 h-6" />
                 </div>
                 <div className="text-left">
@@ -131,7 +131,7 @@ export default function Home() {
                 key={feature.title}
                 className="p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-primary/30 transition-all group hover:bg-white/[0.04]"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20 text-primary mb-6 group-hover:scale-110 transition-transform group-hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20 text-primary mb-6 group-hover:scale-110 transition-transform group-hover:shadow-[0_0_20px_rgba(168,99,235,0.3)]">
                   <feature.icon className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
@@ -186,7 +186,7 @@ export default function Home() {
 
       {/* Supported Coins */}
       <section className="py-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.05),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,99,235,0.05),transparent_70%)]" />
         <div className="container mx-auto text-center relative z-10">
           <h2 className="text-3xl font-bold text-white mb-12">Supported Coins</h2>
           <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
@@ -197,7 +197,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 key={coin}
-                className="px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-bold tracking-wider hover:border-primary/50 hover:bg-primary/5 transition-all hover:shadow-[0_0_20px_rgba(59,130,246,0.2)] flex items-center gap-2"
+                className="px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-bold tracking-wider hover:border-primary/50 hover:bg-primary/5 transition-all hover:shadow-[0_0_20px_rgba(168,99,235,0.2)] flex items-center gap-2"
               >
                 <div className="w-2 h-2 rounded-full bg-primary" />
                 {coin}
@@ -216,7 +216,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="relative rounded-3xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 via-black/40 to-black/60 p-10 md:p-16"
           >
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_60%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(168,99,235,0.15),transparent_60%)]" />
             <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
               <div className="flex-1 text-center md:text-left">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary text-sm font-semibold mb-6 tracking-wide uppercase">
@@ -245,7 +245,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="link-listing-discord"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_25px_rgba(59,130,246,0.4)] hover:shadow-[0_0_40px_rgba(59,130,246,0.6)]"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_25px_rgba(168,99,235,0.4)] hover:shadow-[0_0_40px_rgba(168,99,235,0.6)]"
                 >
                   <Zap className="w-4 h-4 fill-current" />
                   Join Discord &amp; Open a Ticket
@@ -274,7 +274,7 @@ export default function Home() {
               href="https://discord.com/oauth2/authorize?client_id=1479292006483099838&scope=bot&permissions=534723947584" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:shadow-[0_0_50px_rgba(59,130,246,0.6)] items-center justify-center gap-2 relative z-10"
+              className="inline-flex px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_30px_rgba(168,99,235,0.4)] hover:shadow-[0_0_50px_rgba(168,99,235,0.6)] items-center justify-center gap-2 relative z-10"
             >
               <Zap className="w-5 h-5 fill-current" />
               Add to Discord Now
