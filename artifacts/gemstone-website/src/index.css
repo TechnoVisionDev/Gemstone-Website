@@ -71,23 +71,23 @@
   --popover-foreground: 0 0% 98%;
   --popover-border: 210 25% 18%;
 
-  --primary: 197 90% 48%;
+  --primary: 217 91% 60%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 210 25% 18%;
+  --secondary: 217 25% 18%;
   --secondary-foreground: 0 0% 98%;
 
-  --muted: 215 25% 13%;
-  --muted-foreground: 210 15% 62%;
+  --muted: 217 25% 13%;
+  --muted-foreground: 217 15% 62%;
 
-  --accent: 197 90% 48%;
+  --accent: 217 91% 60%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --input: 210 25% 18%;
-  --ring: 197 90% 48%;
+  --input: 217 25% 18%;
+  --ring: 217 91% 60%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: Georgia, serif;
