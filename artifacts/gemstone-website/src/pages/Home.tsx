@@ -74,29 +74,29 @@ export default function Home() {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-8 border-y border-white/5 bg-white/[0.02] backdrop-blur-sm">
+      <section className="py-10 border-y border-white/5 bg-white/[0.02] backdrop-blur-sm">
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-3xl mx-auto">
             {[
               { icon: Users, label: "Active Users", value: "10K+" },
               { icon: Activity, label: "Servers", value: "550+" },
               { icon: Send, label: "Tips Sent", value: "12M+" },
               { icon: Coins, label: "Coins Supported", value: "6" }
             ].map((stat, i) => (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                key={stat.label} 
-                className="flex items-center gap-4"
+                key={stat.label}
+                className="flex flex-col items-center text-center gap-3 p-4 rounded-2xl bg-white/[0.02]"
               >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 text-primary shadow-[0_0_15px_rgba(168,99,235,0.15)]">
-                  <stat.icon className="w-6 h-6" />
+                <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 text-primary shadow-[0_0_15px_rgba(168,99,235,0.15)]">
+                  <stat.icon className="w-5 h-5" />
                 </div>
-                <div className="text-left">
-                  <div className="text-2xl font-bold text-white">{stat.value}</div>
-                  <div className="text-sm font-medium text-muted-foreground uppercase tracking-wider">{stat.label}</div>
+                <div>
+                  <div className="text-2xl font-bold text-white leading-tight">{stat.value}</div>
+                  <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider mt-0.5">{stat.label}</div>
                 </div>
               </motion.div>
             ))}
@@ -105,10 +105,10 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 px-6 relative">
+      <section id="features" className="py-16 md:py-24 px-6 relative">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Everything your server needs</h2>
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">Everything your server needs</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Gemstone brings crypto to your Discord server, allowing you to engage your community with tips, airdrops, and other games.
             </p>
@@ -143,10 +143,10 @@ export default function Home() {
       </section>
 
       {/* Commands Section */}
-      <section id="commands" className="py-24 px-6 bg-white/[0.01] border-y border-white/5">
+      <section id="commands" className="py-16 md:py-24 px-6 bg-white/[0.01] border-y border-white/5">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Powerful Commands</h2>
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">Powerful Commands</h2>
             <p className="text-lg text-muted-foreground">Simple slash commands for complex crypto operations.</p>
           </div>
 
@@ -185,10 +185,10 @@ export default function Home() {
       </section>
 
       {/* Supported Coins */}
-      <section className="py-24 px-6 relative overflow-hidden">
+      <section className="py-16 md:py-24 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,99,235,0.05),transparent_70%)]" />
         <div className="container mx-auto text-center relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-12">Supported Coins</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 md:mb-12">Supported Coins</h2>
           <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
             {["BTC", "LTC", "DOGE", "BCH", "PEPE", "RVN"].map((coin, i) => (
               <motion.div
@@ -208,7 +208,7 @@ export default function Home() {
       </section>
 
       {/* Coin Listing Section */}
-      <section id="listings" className="py-24 px-6 bg-white/[0.01] border-y border-white/5">
+      <section id="listings" className="py-16 md:py-24 px-6 bg-white/[0.01] border-y border-white/5">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -257,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 px-6">
+      <section className="py-16 md:py-24 px-6">
         <div className="container mx-auto max-w-4xl relative">
           <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-[3rem]" />
           <motion.div 
