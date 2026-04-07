@@ -161,7 +161,10 @@ export default function Home() {
               { cmd: "/trivia", desc: "Start a crypto trivia game", cat: "Games" },
               { cmd: "/redenvelope", desc: "Create a lucky red envelope", cat: "Games" },
               { cmd: "/swap", desc: "Swap between supported coins", cat: "Swap" },
-              { cmd: "/store", desc: "Browse and purchase server roles with crypto", cat: "Store" }
+              { cmd: "/store", desc: "Browse and purchase server roles with crypto", cat: "Store" },
+              { cmd: "/leaderboard", desc: "See the global top tippers", cat: "Stats" },
+              { cmd: "/rank", desc: "See your global tipping rank", cat: "Stats" },
+              { cmd: "/stats", desc: "See how much you have tipped people", cat: "Stats" }
             ].map((c, i) => (
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -169,13 +172,13 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
                 key={c.cmd}
-                className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 rounded-xl bg-black/20 border border-white/5 hover:border-primary/20 transition-colors gap-4"
+                className="flex items-center justify-between p-4 rounded-xl bg-black/20 border border-white/5 hover:border-primary/20 transition-colors gap-4"
               >
                 <div className="flex items-center gap-4">
-                  <code className="text-primary font-mono text-sm px-3 py-1.5 rounded-md bg-primary/10 border border-primary/20">{c.cmd}</code>
+                  <code className="text-primary font-mono text-sm px-3 py-1.5 rounded-md bg-primary/10 border border-primary/20 shrink-0">{c.cmd}</code>
                   <span className="text-white font-medium">{c.desc}</span>
                 </div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground px-3 py-1 rounded-full bg-white/5 border border-white/10">
+                <span className="hidden sm:inline text-xs font-semibold uppercase tracking-wider text-muted-foreground px-3 py-1 rounded-full bg-white/5 border border-white/10 shrink-0">
                   {c.cat}
                 </span>
               </motion.div>
